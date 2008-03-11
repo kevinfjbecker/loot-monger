@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java_profile="http:///schemas/java_profile/0" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/java_profile/0 pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA">
+  <uml:Package xmi:id="afd75f19-e94b-4204-8443-f1ccf4a167b1" name="action">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="41985eec-1b72-4f00-a6d2-c6013b947fb6" source="crossContainmentOwner">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="99466406-2360-4cd7-88c9-b67aa461958f" key="parentResourceUri" value="platform:/resource/Toolkit/src/model.auml"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="0f6fdb7e-8d3a-4528-973e-c75251239abc" key="parentId" value="3a6890d7-f4f9-49f2-960a-d323e799eb1f"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="37a004ae-455d-4f54-994a-95ab159211a0" name="Transaction" clientDependency="986151e5-9f7a-4d18-8be5-5524a69b187d">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="80beb33e-565a-45d7-b260-640e2bff5872" name="_actions" visibility="private" type="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6" isOrdered="true" association="8198e53b-1928-4e36-a740-1ef199241b67">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="986151e5-9f7a-4d18-8be5-5524a69b187d" name="Transaction_implements_IAction" supplier="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6" client="37a004ae-455d-4f54-994a-95ab159211a0" contract="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="56391556-8190-49c7-8339-74b69e6f960b" name="add" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="727b493e-0991-43a4-a32b-e1508cc3e3bb" name="action" type="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="74dddb34-b740-432c-ba94-87284de72fef" name="execute" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="d1b888a1-2991-49a3-9775-1ca0b9efa647" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="10dc0b69-abd0-4e8c-9ad9-85d8f880b365" name="getArguments" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="346ed3b9-119d-4d92-98fe-33930a5753b9" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7409295d-3d78-4ae7-a329-e9dfaf016beb" name="getMethod" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="0316696c-7370-4232-ad98-5397ef1a2868" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="819e149e-cfb0-4937-b5dd-dc27ae809ced" name="getTarget" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="79cbc6ef-d665-4623-9c34-2a3bb66edc22" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="850de4ff-fbb7-4620-a4f2-9f3c31ee8a5b" name="undo" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="2a191890-c12f-4bca-af6d-7253330cb65a" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]ClassNotFoundException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7f029ef7-dae1-4912-b752-8b57e30f6c63" name="wasExecuted" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="c5d854aa-7c29-47e6-b8d4-14927ecd0349" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6" name="IAction">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="42df567d-2c1b-457a-92f7-5a5480c12f7f" name="execute" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="fc2cd63b-fa1f-4e51-a6d5-6dec481ebd8d" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="deb7ab21-89d9-4334-8477-c999a2ef45de" name="getArguments" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="b8f8da62-2446-4652-9989-5ea430a4c78f" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="6b2364d3-1785-4bfc-8339-b72a5cbdcdd1" name="getMethod" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="6b1cad2a-31b2-4d1b-9843-9f604026a17c" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="5bbd971a-dbef-468f-bf21-9ee6fdb3513e" name="getTarget" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="7e80e282-861b-4715-8411-c40bf511ba70" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="22841b1f-0c10-49b8-aeaa-c21d9516838a" name="undo" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="f6d9bdd1-7457-42a0-a23f-6b15eafd9caf" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]ClassNotFoundException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="80c8498b-3953-42f7-89d3-14aa4d889e7f" name="wasExecuted" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="d0bcfe1a-ae76-4858-96c3-7ae7c1a61089" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="8198e53b-1928-4e36-a740-1ef199241b67" name="Transaction._actions_Ass" memberEnd="851c8c60-cb06-44f9-9db0-a6e1fa916289 80beb33e-565a-45d7-b260-640e2bff5872">
+      <ownedEnd xmi:type="uml:Property" xmi:id="851c8c60-cb06-44f9-9db0-a6e1fa916289" name="_actions;default" type="37a004ae-455d-4f54-994a-95ab159211a0" association="8198e53b-1928-4e36-a740-1ef199241b67"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="3937cdd2-74a6-4038-b7fc-eb2a55735a7c" name="Executor">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="cff7a5d7-3610-4f84-8a7a-a78350af6797" name="execute" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="3f5a2022-a18c-483a-bf17-762f11ab72ab" name="action" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="0645484c-aca6-45ac-b64c-ff05290575e4" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" name="Action" clientDependency="7762710e-c26f-4190-934e-7abc7a3c5dd7">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="0979ef5c-8d3f-4466-969f-853c03131197" name="arguments" visibility="private" isOrdered="true" association="a6c4bf65-f3e9-4dfc-9cf5-cd1eca91c6a3">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="e2f98936-b2f7-46a3-b923-ce261515195f" name="executed" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="5f31ff10-da37-43c8-a432-60a74c598cc5" name="method" visibility="private" association="4c45b511-1bfd-409a-a784-5d4fa5c7c66d">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="928d3594-cf88-4182-b1c9-1effe285c2c1" name="returnValue" visibility="private" association="7cd45694-f411-40f1-bf67-24138d30ac8f">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="822b758b-5387-4287-9b28-28cd25d01841" name="target" visibility="private" association="c40a5ecc-52c7-4c8f-8e71-535d71abe037">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="7762710e-c26f-4190-934e-7abc7a3c5dd7" name="Action_implements_IAction" supplier="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6" client="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" contract="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="2eee1b5e-382e-4cdd-953c-c6f7c22833ee" name="Action" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="038a7aac-cfaf-4359-9787-1c1d55936aa1" name="target">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="a06e07bb-3f26-459a-ac72-0c5c93117c95" name="method">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="d3fe5874-c7d2-4dea-b0a2-c060797dd277" name="arguments">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="c07f15cc-0d9d-4ff4-bb06-02705b70351f" name="return" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="86350d01-8c47-47c6-aedf-7c45ab3052f9" name="execute" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="1f958339-c533-4572-ba00-716379fb1204" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="50d153cc-d59e-408c-9f79-77b62eaaf22e" name="getArguments" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="254e76cd-423e-462d-9b64-52301315c1ab" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="5a55654c-80dd-4fb2-9ef9-3edfffbce21d" name="getMethod" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="70e0c9e6-1d1e-4fdd-9a7c-716a645a95ac" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="ecb2bd58-c14e-4bf6-937c-5f591c3cfc35" name="getTarget" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="eae9b942-0a58-4aad-b006-ae376fb205ea" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="a84a7da4-b10d-4267-8ae6-6289791fe841" name="toString" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="991349dc-2796-429e-83ed-956be74c6511" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="81770b2b-2ecc-4233-8c7e-5d6623327be2" name="undo" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="f53c6de6-45e0-42fc-950c-206810d1dc41" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]ClassNotFoundException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="1ca41d17-df54-4874-8a19-ae7742ded2f9" name="wasExecuted" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="5b051c69-1516-4bfd-877c-453bcd2f186a" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="4beddefa-d650-405d-a600-ca6c5c903e9d" name="ActionHistory" clientDependency="36be1f18-0ab5-4447-85a1-00dd6609d617">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="e0a9bd1c-9445-44a4-ac93-da994cb031dc" name="_history" visibility="private" type="f96e375e-b2c5-4e6f-9188-6ddfcfcb82f6" isOrdered="true" association="bb71c88c-4103-49d9-8d59-8cc8b5f5a3d5">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="831fbff4-cd64-49c1-879f-5ec1fcce2342" name="_placeHolder" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" value="-1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="27fd53d4-a5ba-4808-b9a5-33d298d8c4fd" name="_next" visibility="private" type="3937cdd2-74a6-4038-b7fc-eb2a55735a7c" association="aaf25732-a14e-4c66-9985-723c2a887c15"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="79c86394-a1f9-41c8-a245-4924686e54be" name="_openTransaction" visibility="private" type="37a004ae-455d-4f54-994a-95ab159211a0" association="e28d6708-d2f5-4f83-8fff-c0be90dbbc8e"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="36be1f18-0ab5-4447-85a1-00dd6609d617" name="ActionHistory_implements_Executor" supplier="3937cdd2-74a6-4038-b7fc-eb2a55735a7c" client="4beddefa-d650-405d-a600-ca6c5c903e9d" contract="3937cdd2-74a6-4038-b7fc-eb2a55735a7c"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="ba1ad39c-23b0-49cd-9fb8-60e16776b7e3" name="add" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="ec7aeb8c-0618-4c2c-bb5f-68295c6e7b2c" name="executor" type="3937cdd2-74a6-4038-b7fc-eb2a55735a7c"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="29cd224c-7353-4f83-ad39-1018b5179f4a" name="atEnd" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="86cce55e-2659-4388-a3ae-fe0999c16fe6" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="3badc7c9-9795-4466-9664-08c0ab435a6c" name="atStart" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="43234be3-88ec-4d32-9ad5-a7e2e10317af" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="bb98e037-76ab-470a-9c68-9f98204a6f9a" name="closeTransaction" visibility="public"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7e422d81-215d-44dd-88fc-2671414f73d2" name="execute" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="eb5c1da3-eb79-4127-895f-26f89a1015b8" name="action" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="64a89cd5-72a0-41e2-a40b-7a2f51161870" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="36cbb313-4886-4f4b-b1ac-c4cf771e9e28" name="length" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="e10e50fb-1ce6-4b51-827f-d5ec640ab11a" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="3a32ed41-a9e9-4f03-bd9d-74411c4bb85e" name="redo" visibility="public">
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="4ad10939-bc1e-46c7-8402-cf74c71e277f" name="toString" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="e7df20a8-2d7f-4121-b2e7-62f81858236b" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="386179d6-14db-4f01-b495-2895bd062407" name="undo" visibility="public">
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]ClassNotFoundException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="f20499c3-9c53-45bf-939e-b02113946bf0" name="openTransaction" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="bb71c88c-4103-49d9-8d59-8cc8b5f5a3d5" name="ActionHistory._history_Ass" memberEnd="056fa38b-8d6e-442f-9371-a45aa38e9562 e0a9bd1c-9445-44a4-ac93-da994cb031dc">
+      <ownedEnd xmi:type="uml:Property" xmi:id="056fa38b-8d6e-442f-9371-a45aa38e9562" name="_history;default" type="4beddefa-d650-405d-a600-ca6c5c903e9d" association="bb71c88c-4103-49d9-8d59-8cc8b5f5a3d5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="aaf25732-a14e-4c66-9985-723c2a887c15" name="ActionHistory._next_Ass" memberEnd="9d5f8ac8-5d6f-4de6-b396-d2dd5a9e5c2f 27fd53d4-a5ba-4808-b9a5-33d298d8c4fd">
+      <ownedEnd xmi:type="uml:Property" xmi:id="9d5f8ac8-5d6f-4de6-b396-d2dd5a9e5c2f" name="_next;default" type="4beddefa-d650-405d-a600-ca6c5c903e9d" association="aaf25732-a14e-4c66-9985-723c2a887c15"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="e28d6708-d2f5-4f83-8fff-c0be90dbbc8e" name="ActionHistory._openTransaction_Ass" memberEnd="e123313f-0cfd-4bbf-92eb-988ad0f01135 79c86394-a1f9-41c8-a245-4924686e54be">
+      <ownedEnd xmi:type="uml:Property" xmi:id="e123313f-0cfd-4bbf-92eb-988ad0f01135" name="_openTransaction;default" type="4beddefa-d650-405d-a600-ca6c5c903e9d" association="e28d6708-d2f5-4f83-8fff-c0be90dbbc8e"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="a6c4bf65-f3e9-4dfc-9cf5-cd1eca91c6a3" name="Action.arguments_Ass" memberEnd="4743cf37-e980-49f3-8b19-a61019e8b5c6 0979ef5c-8d3f-4466-969f-853c03131197">
+      <ownedEnd xmi:type="uml:Property" xmi:id="4743cf37-e980-49f3-8b19-a61019e8b5c6" name="arguments;default" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" association="a6c4bf65-f3e9-4dfc-9cf5-cd1eca91c6a3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="4c45b511-1bfd-409a-a784-5d4fa5c7c66d" name="Action.method_Ass" memberEnd="c015bc62-1f54-45f2-94cc-7dadcba168e8 5f31ff10-da37-43c8-a432-60a74c598cc5">
+      <ownedEnd xmi:type="uml:Property" xmi:id="c015bc62-1f54-45f2-94cc-7dadcba168e8" name="method;default" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" association="4c45b511-1bfd-409a-a784-5d4fa5c7c66d"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="7cd45694-f411-40f1-bf67-24138d30ac8f" name="Action.returnValue_Ass" memberEnd="f02a65a8-2f2f-4581-a906-dee6147b08a2 928d3594-cf88-4182-b1c9-1effe285c2c1">
+      <ownedEnd xmi:type="uml:Property" xmi:id="f02a65a8-2f2f-4581-a906-dee6147b08a2" name="returnValue;default" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" association="7cd45694-f411-40f1-bf67-24138d30ac8f"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="c40a5ecc-52c7-4c8f-8e71-535d71abe037" name="Action.target_Ass" memberEnd="3da68ac5-2b60-4ab0-b7aa-3e607578c861 822b758b-5387-4287-9b28-28cd25d01841">
+      <ownedEnd xmi:type="uml:Property" xmi:id="3da68ac5-2b60-4ab0-b7aa-3e607578c861" name="target;default" type="587a72bb-c7b8-4ad6-bb53-6e0c59cc3f9f" association="c40a5ecc-52c7-4c8f-8e71-535d71abe037"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="a763410a-9c17-4867-90d4-ba77255ddf98" name="ActionProxy" clientDependency="3daadf25-9ce3-4b7c-90ec-52d84a4029c5">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="30204e16-4068-4898-9980-f6af8c84e5b5" name="_executor" visibility="private" type="3937cdd2-74a6-4038-b7fc-eb2a55735a7c" association="d795ac24-a460-4f44-92a6-afc228dc01ff"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="b25a45de-b0a5-4747-8a34-de61154c1254" name="_object" visibility="private" association="90648310-af48-4a23-97ae-4ef02c381c83">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="3daadf25-9ce3-4b7c-90ec-52d84a4029c5" name="ActionProxy_implements_InvocationHandler" client="a763410a-9c17-4867-90d4-ba77255ddf98">
+        <supplier xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationHandler"/>
+        <contract xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationHandler"/>
+      </interfaceRealization>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="67a71dc8-8c21-4f63-8505-0b59f9009513" name="ActionProxy" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="59b75619-f2f1-49a2-a558-8c2caeb52c30" name="object">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="ba37982d-a966-4123-9b3e-e214b61f210e" name="return" type="a763410a-9c17-4867-90d4-ba77255ddf98" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7f9c8041-8649-40e8-b0c2-0601da2a1812" name="invoke" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="5d6f62d7-1b40-41e1-a1a8-52668d370db1" name="wrapper">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="2e137e10-6670-4d94-8318-9b6240f7b3d6" name="method">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]Method"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="f7449879-332c-4b93-9306-7fb4702d7045" name="arguments">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="ce67dbd6-f2fc-4205-8ad7-16e5e33ca850" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalArgumentException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]IllegalAccessException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/reflect/model.auml#reflect.[C]InvocationTargetException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]SecurityException"/>
+        <raisedException xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]NoSuchMethodException"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7a77dfc5-0f98-43f2-9cc4-e413c0c07fb8" name="setActionHandler" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="9ba89bc1-359e-4aef-a215-a272d8c28772" name="actionHandler" type="3937cdd2-74a6-4038-b7fc-eb2a55735a7c"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="d795ac24-a460-4f44-92a6-afc228dc01ff" name="ActionProxy._executor_Ass" memberEnd="bbec8960-c01d-4ca4-ba30-a35149635168 30204e16-4068-4898-9980-f6af8c84e5b5">
+      <ownedEnd xmi:type="uml:Property" xmi:id="bbec8960-c01d-4ca4-ba30-a35149635168" name="_executor;default" type="a763410a-9c17-4867-90d4-ba77255ddf98" association="d795ac24-a460-4f44-92a6-afc228dc01ff"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="90648310-af48-4a23-97ae-4ef02c381c83" name="ActionProxy._object_Ass" memberEnd="10dffe66-8261-4af0-9875-34e2ec1ec3aa b25a45de-b0a5-4747-8a34-de61154c1254">
+      <ownedEnd xmi:type="uml:Property" xmi:id="10dffe66-8261-4af0-9875-34e2ec1ec3aa" name="_object;default" type="a763410a-9c17-4867-90d4-ba77255ddf98" association="90648310-af48-4a23-97ae-4ef02c381c83"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="84fbd19a-9df1-4f8c-b22f-0719ac0fbe86" name="Undoable">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="fdc8e4ea-adc9-432f-9d0e-0303ce38f4b3" name="undoMethod" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="825e7726-2c3a-4f53-96cb-c911b4a5a886" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="13e3763a-5c6f-4a76-8cff-bfd54efaa76a" name="args" visibility="public" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="25401e0e-a02d-4f4c-a59a-2e6f9172ab8b" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="88d2653c-00e1-4be0-a896-ba4abd4d33a0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="f994fbe9-8e5e-4fa2-9e9d-a5feb3febb60" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_3xRZYR4-EduWqeK3CXfnzA"/>
+    </profileApplication>
+  </uml:Package>
+  <java_profile:create xmi:id="cdf48be1-fea5-4d76-8887-eb7ec98713cd" base_Operation="2eee1b5e-382e-4cdd-953c-c6f7c22833ee"/>
+  <java_profile:create xmi:id="90d3658e-cc66-485e-815d-33de5571e857" base_Operation="67a71dc8-8c21-4f63-8505-0b59f9009513"/>
+</xmi:XMI>

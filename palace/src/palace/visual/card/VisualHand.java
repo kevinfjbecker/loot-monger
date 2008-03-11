@@ -3,8 +3,8 @@ package palace.visual.card;
 import java.util.Observable;
 
 import palace.logical.card.LogicalCard;
+import palace.toolkit.visual.Interactive;
 
-import visual.Interactive;
 
 public class VisualHand extends VisualPlayArea {
 

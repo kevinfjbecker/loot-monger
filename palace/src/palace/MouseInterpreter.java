@@ -1,8 +1,5 @@
 package palace;
 
-import gui.Canvas;
-import gui.InteractiveSurface;
-import gui.MouseHub;
 
 import java.awt.Point;
 import java.awt.event.MouseEvent;
@@ -12,11 +9,14 @@ import java.util.HashMap;
 import palace.event.PlayEvent;
 import palace.event.PlayMultipleEvent;
 import palace.logical.card.GameState;
+import palace.toolkit.gui.Canvas;
+import palace.toolkit.gui.InteractiveSurface;
+import palace.toolkit.gui.MouseHub;
+import palace.toolkit.visual.Active;
+import palace.toolkit.visual.Interactive;
+import palace.toolkit.visual.VisualTarget;
 import palace.visual.card.VisualCard;
 import palace.visual.card.VisualHand;
-import visual.Active;
-import visual.Interactive;
-import visual.VisualTarget;
 import static palace.visual.card.HorizontalOverlappedAlignment.*;
 
 public class MouseInterpreter extends MouseHub {

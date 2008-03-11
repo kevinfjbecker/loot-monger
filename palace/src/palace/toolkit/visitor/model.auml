@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="df159db7-6ee5-481e-8e92-aca447efbc3e" name="visitor">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="52201483-8b9b-4ec4-9aa4-9a2aeb0140f7" source="crossContainmentOwner">
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="90909b92-e40e-410b-b342-1084b02929b8" key="parentResourceUri" value="platform:/resource/Toolkit/src/model.auml"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="2eb81f51-af5e-46b0-a7a3-c0390d62d0eb" key="parentId" value="3a6890d7-f4f9-49f2-960a-d323e799eb1f"/>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Interface" xmi:id="8ff4fd93-3b6b-47a3-b0fd-85b67b513a8c" name="Visitor">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" parameter="56753651-6b1f-4c62-b710-002ea0dfc616">
+      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="56753651-6b1f-4c62-b710-002ea0dfc616" parameteredElement="770524e5-e299-4255-9286-164bcc8da3b8">
+        <ownedParameteredElement xmi:type="uml:Class" xmi:id="770524e5-e299-4255-9286-164bcc8da3b8" name="T" templateParameter="56753651-6b1f-4c62-b710-002ea0dfc616"/>
+      </ownedParameter>
+    </ownedTemplateSignature>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="4f487523-41af-4b43-91ac-32208dae7005" name="visit" visibility="public" isAbstract="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="49f9b755-cf6c-4e6a-a3cd-b61bc86a89de" name="t" type="770524e5-e299-4255-9286-164bcc8da3b8"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="ab7e9d91-ea2e-4f11-b9e9-b39b57a9dcef" name="Visitable">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" parameter="942750b7-1edb-4ee6-8bae-f587b812f697">
+      <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="942750b7-1edb-4ee6-8bae-f587b812f697" parameteredElement="7b8d83ab-9258-490c-847b-705f5340101b">
+        <ownedParameteredElement xmi:type="uml:Class" xmi:id="7b8d83ab-9258-490c-847b-705f5340101b" name="T" templateParameter="942750b7-1edb-4ee6-8bae-f587b812f697"/>
+      </ownedParameter>
+    </ownedTemplateSignature>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="877a8a26-a49a-42d2-bd9f-2cbfef3d26e0" name="accept" visibility="public" isAbstract="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="341343d8-7372-4591-bb8c-0dbfc1154000" name="v" type="8ff4fd93-3b6b-47a3-b0fd-85b67b513a8c"/>
+    </ownedOperation>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="6195211a-d482-45c5-8a55-0690204db580">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="4f7207f8-6c50-490e-b695-67fda3893029" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_3xRZYR4-EduWqeK3CXfnzA"/>
+  </profileApplication>
+</uml:Package>

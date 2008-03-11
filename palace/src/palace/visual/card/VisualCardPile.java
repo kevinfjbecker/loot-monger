@@ -12,10 +12,10 @@ import java.util.Observable;
 import java.util.Observer;
 
 import palace.logical.card.LogicalCardPile;
+import palace.toolkit.visual.AbstractInteractive;
+import palace.toolkit.visual.Active;
+import palace.toolkit.visual.VisualTarget;
 
-import visual.AbstractInteractive;
-import visual.Active;
-import visual.VisualTarget;
 
 public class VisualCardPile extends AbstractInteractive implements Observer,
 		VisualTarget, Active {

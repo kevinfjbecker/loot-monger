@@ -1,34 +1,26 @@
-package palace.visual.card;
-
-import static palace.visual.card.VisualCard.WIDTH;
+package palace.toolkit.visual;
 
 import java.util.ArrayList;
 
-import palace.toolkit.visual.AlignmentArbiter;
-import palace.toolkit.visual.CompositeInteractive;
-import palace.toolkit.visual.Interactive;
-
-
-public class HorizontalOverlappedAlignment implements AlignmentArbiter {
-	
-	public static final int SPACING = 16;
+public class HorizontalAlignment implements AlignmentArbiter {
 
 	public void alignElements(CompositeInteractive c, ArrayList<Interactive> a) {
 		int cumulativeWidth = 0;
 		for (Interactive interactive : a) {
-			interactive
-					.setX(c.getX() + c.getElementSpacing() + cumulativeWidth);
-			cumulativeWidth += SPACING;
+			interactive.setX(c.getX() + (a.indexOf(interactive) + 1)
+					* c.getElementSpacing() + cumulativeWidth);
+			cumulativeWidth += interactive.getWidth();
 			interactive.setY(c.getY() + c.getElementSpacing());
 		}
 	}
 
 	public void alignFrame(CompositeInteractive c, ArrayList<Interactive> a) {
+
 		if (a.isEmpty()) {
 			c.setWidth(c.getEmptyWidth() + 2 * c.getElementSpacing());
 			c.setHeight(c.getEmptyHeight() + 2 * c.getElementSpacing());
 		} else {
-			c.setWidth(2 * c.getElementSpacing() + totalWidth(a));
+			c.setWidth((a.size() + 1) * c.getElementSpacing() + totalWidth(a));
 			c.setHeight(maximalHeight(a) + 2 * c.getElementSpacing());
 		}
 	}
@@ -41,9 +33,11 @@ public class HorizontalOverlappedAlignment implements AlignmentArbiter {
 		return maximalElementHeight;
 	}
 
-	// pre: elements.size >= 1
-	private int totalWidth(ArrayList<Interactive> elements) {
-		return (elements.size() - 1) * SPACING + WIDTH;
+	private int totalWidth(ArrayList<Interactive> e) {
+		int cumulativeElementWidth = 0;
+		for (Interactive interactive : e)
+			cumulativeElementWidth += interactive.getWidth();
+		return cumulativeElementWidth;
 	}
 
 }

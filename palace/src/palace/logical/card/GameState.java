@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-import logical.State;
 import palace.logical.phase.ChanceFailedPhase;
 import palace.logical.phase.EndPlayOrEatPhase;
 import palace.logical.phase.MainDrawBackUpPhase;
@@ -13,6 +12,7 @@ import palace.logical.phase.Phase;
 import palace.logical.phase.SetupSixFaceUpPhase;
 import palace.logical.phase.SetupThreeFaceDownPhase;
 import palace.logical.phase.SetupThreeOpenPlayPhase;
+import palace.toolkit.logical.State;
 
 public class GameState implements ActionListener, State {
 

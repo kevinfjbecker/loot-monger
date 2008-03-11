@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmi:id="7eb95242-ed32-4943-93b4-1b4855af73be" name="logical">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="57760231-68bd-4ba5-85a4-3428fa3ddf69" source="crossContainmentOwner">
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="48f5ff3b-6e4c-4fd5-aa0a-71d6c5c223ac" key="parentResourceUri" value="platform:/resource/Toolkit/src/model.auml"/>
+    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="fe1dd8ac-02c4-4ca2-af03-95a758aed555" key="parentId" value="3a6890d7-f4f9-49f2-960a-d323e799eb1f"/>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Interface" xmi:id="5aba35ed-9a90-4c87-b845-9b329e291532" name="State"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="b68751c8-3792-4449-ad90-bed18a6c161e">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="30f85cbf-b44c-4b27-a1cf-3846d7b38a2a" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_3xRZYR4-EduWqeK3CXfnzA"/>
+  </profileApplication>
+</uml:Package>
