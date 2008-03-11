@@ -2,9 +2,10 @@ package palace.visual.card;
 
 import java.util.ArrayList;
 
-import visual.AlignmentArbiter;
-import visual.CompositeInteractive;
-import visual.Interactive;
+import palace.toolkit.visual.AlignmentArbiter;
+import palace.toolkit.visual.CompositeInteractive;
+import palace.toolkit.visual.Interactive;
+
 import static palace.visual.card.VisualCard.*;
 
 public class DiagonalAlignment implements AlignmentArbiter {

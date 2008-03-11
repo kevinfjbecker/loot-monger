@@ -1,14 +1,14 @@
 package palace;
 
-import gui.InteractiveSurface;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 
+import palace.toolkit.gui.InteractiveSurface;
+import palace.toolkit.visitor.Visitor;
+import palace.toolkit.visual.CompositeInteractive;
+import palace.toolkit.visual.Interactive;
 import palace.visual.card.VisualCard;
-import visitor.Visitor;
-import visual.CompositeInteractive;
-import visual.Interactive;
 
 public class MultiSelectSurface extends InteractiveSurface {
 

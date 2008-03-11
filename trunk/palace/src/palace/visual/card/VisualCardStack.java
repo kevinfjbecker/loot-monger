@@ -6,11 +6,11 @@ import java.util.Observable;
 
 import palace.logical.card.LogicalCard;
 import palace.logical.card.LogicalCardStack;
+import palace.toolkit.visitor.Visitor;
+import palace.toolkit.visual.AbstractCompositeInteractive;
+import palace.toolkit.visual.Interactive;
+import palace.toolkit.visual.VisualTarget;
 
-import visitor.Visitor;
-import visual.AbstractCompositeInteractive;
-import visual.Interactive;
-import visual.VisualTarget;
 
 public class VisualCardStack extends AbstractCompositeInteractive implements
 		VisualTarget {

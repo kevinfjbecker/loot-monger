@@ -1,7 +1,7 @@
 package palace;
-import gui.Canvas;
-import gui.WindowFrame;
 import palace.logical.card.GameState;
+import palace.toolkit.gui.Canvas;
+import palace.toolkit.gui.WindowFrame;
 import palace.visual.card.VisualCardPile;
 import palace.visual.card.VisualCardStack;
 import palace.visual.card.VisualDeck;

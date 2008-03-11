@@ -7,8 +7,8 @@ import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
 
 import palace.logical.card.LogicalCard;
+import palace.toolkit.visual.AbstractInteractive;
 
-import visual.AbstractInteractive;
 
 public class VisualCard extends AbstractInteractive {
 

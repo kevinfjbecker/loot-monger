@@ -12,9 +12,9 @@ import java.awt.geom.RoundRectangle2D;
 import java.awt.image.BufferedImage;
 
 import palace.logical.card.LogicalDeck;
+import palace.toolkit.visual.AbstractInteractive;
+import palace.toolkit.visual.Active;
 
-import visual.AbstractInteractive;
-import visual.Active;
 
 public class VisualDeck extends AbstractInteractive implements Active {
 

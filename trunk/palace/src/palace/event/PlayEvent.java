@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 
 import palace.MouseInterpreter;
 import palace.logical.card.LogicalCard;
+import palace.toolkit.visual.VisualTarget;
 import palace.visual.card.VisualCard;
 
-import visual.VisualTarget;
 
 public class PlayEvent extends ActionEvent {
 

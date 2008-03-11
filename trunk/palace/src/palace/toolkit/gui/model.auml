@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:java_profile="http:///schemas/java_profile/0" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xsi:schemaLocation="http:///schemas/java_profile/0 pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA">
+  <uml:Package xmi:id="024ec331-4195-4de8-bb4b-c27ef9444eb9" name="gui">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="462340f1-1cd5-43a7-ba10-80a88f8a2b7d" source="crossContainmentOwner">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="4d729678-54d3-4b20-a8f1-86df83860cc1" key="parentResourceUri" value="platform:/resource/Toolkit/src/model.auml"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="31267b5f-7789-4ae7-9104-a80ab23f5794" key="parentId" value="3a6890d7-f4f9-49f2-960a-d323e799eb1f"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="ae5bbad3-f8c7-4cf0-b8ab-9202404c4403" name="WindowFrame">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="72945246-6dc0-46b0-8e29-0a8c1a97e92a" name="_canvas" visibility="private" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" association="e54b8799-4d94-42c1-aca8-afea39c299fc"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="efb9b483-a7a8-4402-9b37-cba661241250" name="WindowFrame" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="0146019a-401c-48ea-b82b-bc459d99867e" name="canvas" type="0852dd4b-bd87-4120-83b2-223be9ccfa59"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="8d265dd1-5e45-483a-af12-5e87104519b3" name="return" type="ae5bbad3-f8c7-4cf0-b8ab-9202404c4403" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="dc28ce06-d740-4d52-9abf-7e00b70f0fbc" name="createAndShowGUI" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="93e8bdf8-8a89-48e3-8888-cf41800a80b5" name="title">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="2c21633d-58c7-49f3-b1d5-a5be3c15ccdb" name="w">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="7489bd8c-2e8c-4a59-ad2a-806781e3160d" name="h">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="0852dd4b-bd87-4120-83b2-223be9ccfa59" name="Canvas">
+      <generalization xmi:type="uml:Generalization" xmi:id="12ad1b15-99a8-46b4-ac90-a4f296d7ccd2">
+        <general xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/javax/swing/model.auml#swing.[C]JPanel"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="91c174e3-4075-4b55-80a8-526ad3100cb1" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralString" value="1L"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="d2e5e4ea-97f2-42ac-b9a2-ab587e0749b3" name="_interactiveSurface" visibility="private" type="542ebac9-79cc-4148-afc2-8420aa36affb" association="5384ca4d-b5e3-4e1a-8d09-714401e906d2"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="cc7fd218-27d2-49ba-9296-0466b061459e" name="_mouseInteractionHub" visibility="private" type="8a4b631c-105f-4adf-b7ec-13870bd34111" association="f5e8df73-7074-434a-a827-a054bbbe4d31"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="c0a246a5-8b22-491b-8abe-a8f5f3ac81c3" name="Canvas" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="9a2e74e7-1606-4efc-9d10-771a6eeea62e" name="hub" type="8a4b631c-105f-4adf-b7ec-13870bd34111"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="6128527b-74c5-49bc-b33f-1360ee842a16" name="surface" type="542ebac9-79cc-4148-afc2-8420aa36affb"/>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="aebd4466-11a6-41b4-9e14-2d3cd393caba" name="return" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="22c7a11d-efb7-4148-9ad9-1f41382d3251" name="addElement" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="d5ebd336-d7c2-4e4a-9c72-19ec7e828d36" name="interactive">
+          <type xmi:type="uml:Interface" href="../visual/model.auml#fe356bb2-1c89-4256-9a8b-e7f351b2d9f5"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="3de20f74-8014-4e3f-be2d-b62769fdde46" name="paintComponent" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="92b43b54-5987-4dab-b0fd-384932824f23" name="g">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/model.auml#awt.[C]Graphics"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="e9f66697-0e11-4eb4-b68d-3368cf91d9f4" name="setGameState" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="e84c031f-04e6-4c02-a3fb-2b8145431fb0" name="state">
+          <type xmi:type="uml:Interface" href="../logical/model.auml#5aba35ed-9a90-4c87-b845-9b329e291532"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="e54b8799-4d94-42c1-aca8-afea39c299fc" name="WindowFrame._canvas_Ass" memberEnd="6bcbbbb1-da02-41f0-b41e-114427200a55 72945246-6dc0-46b0-8e29-0a8c1a97e92a">
+      <ownedEnd xmi:type="uml:Property" xmi:id="6bcbbbb1-da02-41f0-b41e-114427200a55" name="_canvas;default" type="ae5bbad3-f8c7-4cf0-b8ab-9202404c4403" association="e54b8799-4d94-42c1-aca8-afea39c299fc"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="76705692-af62-4c9c-863e-8ef31da483ce" name="VisualTextLabel">
+      <generalization xmi:type="uml:Generalization" xmi:id="f6099207-413b-4eb8-b2be-1f79d6105729">
+        <general xmi:type="uml:Class" href="../visual/model.auml#e527f0d3-f8a6-436a-95c7-aa77567b9ae2"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="6c893fb7-a7a3-4c08-9d17-7e8204335ebe" name="_text" visibility="private">
+        <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="4c6f8bff-5518-4679-8c51-0d344a140aff" name="VisualTextLabel" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="0025538e-dee7-400a-a0b6-ad47870ad9fa" name="text">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="83281c8e-59b2-4342-82e4-668cca3e5a4f" name="return" type="76705692-af62-4c9c-863e-8ef31da483ce" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="84355b5c-b7a6-4738-9d5a-d22016c614c1" name="draw" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="84aaa9e4-878b-41b0-be70-0aa51128dddf" name="g2d">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/model.auml#awt.[C]Graphics2D"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="9bb2a4cd-01f3-4b1d-a9d2-8a904641a73c" name="update" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="cadea8a1-bdb6-4884-b9b7-aa6b935c17aa" name="logicalScore">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]Observable"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="df085252-d00b-4d4f-a5ec-92dc8ecd56ee" name="text">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="407170f9-4eb2-419d-ad09-c6ace4bd9f0b" name="FreeAlignment" clientDependency="5213fc6d-3e7a-4c50-9f70-5ff1d39e7047">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="5213fc6d-3e7a-4c50-9f70-5ff1d39e7047" name="FreeAlignment_implements_AlignmentArbiter" client="407170f9-4eb2-419d-ad09-c6ace4bd9f0b">
+        <supplier xmi:type="uml:Interface" href="../visual/model.auml#df73227a-5f94-4735-9175-0279fb2e3110"/>
+        <contract xmi:type="uml:Interface" href="../visual/model.auml#df73227a-5f94-4735-9175-0279fb2e3110"/>
+      </interfaceRealization>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="1bf6d1dd-6c0c-45fe-948b-1570b9afbc03" name="alignElements" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="df35ef1a-d883-45d8-bf0b-e718d0942a45" name="c">
+          <type xmi:type="uml:Interface" href="../visual/model.auml#70facd5a-7162-437d-98f7-202760a1b36c"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="4eb37638-1c97-4a84-a6b4-59143434a8a5" name="a">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]ArrayList"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="fe1b08f1-7ecc-428c-b116-ba3b876635d6" name="alignFrame" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="1db6cf65-a4a5-46b6-8728-f304305aa887" name="c">
+          <type xmi:type="uml:Interface" href="../visual/model.auml#70facd5a-7162-437d-98f7-202760a1b36c"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="5000a5ba-f9c9-4c5d-87a2-bc41cb38c6fc" name="a">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]ArrayList"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="542ebac9-79cc-4148-afc2-8420aa36affb" name="InteractiveSurface" clientDependency="dce7eb7e-41db-4e08-b86a-6883912bf574">
+      <generalization xmi:type="uml:Generalization" xmi:id="e6170a1f-bc78-449a-85d7-42a7f1e6e5c1">
+        <general xmi:type="uml:Class" href="../visual/model.auml#6ed890eb-70ea-4278-8b16-946e4d8c37fd"/>
+      </generalization>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="4675f0f9-1f45-43f9-96f9-79067497db65" name="_canvas" visibility="private" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" association="b3706896-9b09-44c3-aac2-2bebb85c03a2"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="dce7eb7e-41db-4e08-b86a-6883912bf574" name="InteractiveSurface_implements_ComponentListener" client="542ebac9-79cc-4148-afc2-8420aa36affb">
+        <supplier xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentListener"/>
+        <contract xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentListener"/>
+      </interfaceRealization>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="8ec0efaa-b1ca-4932-91b2-4c1a9082ca72" name="InteractiveSurface" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="b02324e7-edbd-47c7-a3da-dbe668926134" name="return" type="542ebac9-79cc-4148-afc2-8420aa36affb" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="c323c459-09e6-4f7a-a07a-3ccc46d892d9" name="componentResized" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="2b557c06-bdde-4943-be62-42a9ed3a2401" name="componentEvent">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="069b5eb4-a236-4403-9516-fb2cc768b448" name="componentMoved" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="94fdf53c-6b1e-4d4f-bd6f-a829b1a3be69" name="componentEvent">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="46c901d2-b7f4-45eb-ac1e-89997717d7b1" name="componentShown" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="12d52ee4-0ed2-4840-99e2-81850af01aa6" name="componentEvent">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="575f50a3-9578-4b32-8a5a-69ad40d4e5ba" name="componentHidden" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="3099bbd0-6c6e-46a9-889a-0d4f4a93e3c2" name="componentEvent">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]ComponentEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="95cd1075-28a8-4de7-b571-b83f7a194baa" name="draw" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="20155b95-7e9b-4633-948d-ad80acffb3aa" name="g2d">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/model.auml#awt.[C]Graphics2D"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="81c484f1-cc9d-4e70-8389-36cb0e6144be" name="setCanvas" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="c87b7c0b-b8a8-4ffb-91d0-c50ea25f4557" name="canvas" type="0852dd4b-bd87-4120-83b2-223be9ccfa59"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="d7718eef-214b-4c4f-a90a-2bbe772e3b8e" name="update" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="e2cd6b12-a752-4334-8991-5960c132c63f" name="observable">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]Observable"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="b700bec7-e3ce-46bd-9f80-da3ee64cd564" name="object">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/lang/model.auml#lang.[C]Object"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="5384ca4d-b5e3-4e1a-8d09-714401e906d2" name="Canvas._interactiveSurface_Ass" memberEnd="f1ef0aa4-a1df-43da-96ec-6d4058bb68f4 d2e5e4ea-97f2-42ac-b9a2-ab587e0749b3">
+      <ownedEnd xmi:type="uml:Property" xmi:id="f1ef0aa4-a1df-43da-96ec-6d4058bb68f4" name="_interactiveSurface;default" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" association="5384ca4d-b5e3-4e1a-8d09-714401e906d2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="8a4b631c-105f-4adf-b7ec-13870bd34111" name="MouseHub" clientDependency="946ec616-62a7-4a6e-a2ca-02542934fb2a f422cc21-fb86-4713-ba4c-71efbab61c0e">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="757267e4-4c49-47f2-91d3-e91c8c030640" name="_state" visibility="protected" association="9cc0953b-ae13-4119-aaba-27d5dc146aea">
+        <type xmi:type="uml:Interface" href="../logical/model.auml#5aba35ed-9a90-4c87-b845-9b329e291532"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="96436521-110a-448c-90d5-df689a690a6a" name="_canvas" visibility="protected" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" association="b61b44e9-2855-48b2-84d4-5bf26107b7e6"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="7e2bfe94-d4c5-4dd9-8bee-f3bbfe9ebb33" name="_surface" visibility="protected" type="542ebac9-79cc-4148-afc2-8420aa36affb" association="3f06e1d1-9f93-474f-96ff-686cbfe87d79"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="345bfadd-5caf-40dc-a23f-07a526aba102" name="_xOffset" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="3f79504d-b00e-49b0-a182-90085ba190f0" name="_yOffset" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="946ec616-62a7-4a6e-a2ca-02542934fb2a" name="MouseHub_implements_MouseListener" client="8a4b631c-105f-4adf-b7ec-13870bd34111">
+        <supplier xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseListener"/>
+        <contract xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseListener"/>
+      </interfaceRealization>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="f422cc21-fb86-4713-ba4c-71efbab61c0e" name="MouseHub_implements_MouseMotionListener" client="8a4b631c-105f-4adf-b7ec-13870bd34111">
+        <supplier xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseMotionListener"/>
+        <contract xmi:type="uml:Interface" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseMotionListener"/>
+      </interfaceRealization>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="05a9dc62-2ac0-4629-9834-4070e9930180" name="getTarget" visibility="protected">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="7f81aa45-c587-42aa-963f-b24cdf79842a" name="x">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="0a9536b6-c1f8-4331-bdde-b06cf5e9b58f" name="y">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="879bac62-95fc-458d-86f9-2d75a5098cd7" name="return" direction="return">
+          <type xmi:type="uml:Interface" href="../visual/model.auml#0ee8a777-9d37-41f4-8b0e-a29035045e79"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="8d28de6d-7ef7-4593-9438-392c17723834" name="calculateOffset" visibility="protected">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="4eca557d-e806-4f23-ba94-e2f7843ba065" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="c0ade42c-06d7-4bf0-811a-7cf9c8feb6e1" name="mouseClicked" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="894c1ded-992f-4829-8379-950c160547fd" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="4b19ecee-c1a2-4c72-8c27-f16f89547fcf" name="mouseDragged" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="4268a223-29f4-4412-a253-3d1fc0a0a232" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="66f9fc83-8d35-4028-bc1d-b384030a43dd" name="mouseEntered" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="2a8fa0ac-95d7-4a35-bfa4-1d5f236abf5f" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="1c155762-93e5-476f-bfd0-fd9067f9020e" name="mouseExited" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="5b6fbfc5-f98a-462f-9889-a814fe19a784" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="cfbd9d79-a92a-4efe-99ed-c06ae84e9bae" name="mouseMoved" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="4ad1a927-c9e6-4842-957d-3f5493b4d6f6" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="017fda1a-1b62-413f-8660-e15bdace64f7" name="mousePressed" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="38053686-6afd-48a5-883b-556c57e0da2d" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="7dac191a-57c9-4a19-81fb-09d92a33f261" name="mouseReleased" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="a2cf66b5-98e1-4214-addd-283d85049cfa" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="ce63bd2b-1781-49cb-bcdd-0aafd28f5ef6" name="setCanvas" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="e3d427b2-692b-4a26-b1d3-627f6e46279a" name="canvas" type="0852dd4b-bd87-4120-83b2-223be9ccfa59"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="a83c3636-5922-4f77-9f9c-da67b621b9f4" name="setGameState" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="75662d01-8b72-4d2e-bd64-f7582034170c" name="State">
+          <type xmi:type="uml:Interface" href="../logical/model.auml#5aba35ed-9a90-4c87-b845-9b329e291532"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="db548e5b-ed52-4a58-a1db-4afeff4bdac2" name="setInteractiveSurface" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="97e2d7dc-7836-4523-ae03-2c0427aecb68" name="interactiveSurface" type="542ebac9-79cc-4148-afc2-8420aa36affb"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="007140dc-56a2-41c5-bebb-9ff078e99c4a" name="traverseAll" visibility="private">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="a5bb6e11-2c2b-4382-bdd5-c40e55005a12" name="return" direction="return">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]ArrayList"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="863e4d47-e47d-4138-b4e3-d351a6ed013b" name="traverseAllRecursiveCall" visibility="private">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="7191b36e-4930-438d-a8d9-c07f83d6fff8" name="traversal">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/util/model.auml#util.[C]ArrayList"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="3ec88c83-6159-4297-95b6-99bbaf92ca12" name="compositeInteractive">
+          <type xmi:type="uml:Interface" href="../visual/model.auml#70facd5a-7162-437d-98f7-202760a1b36c"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="df6f43da-193a-43d9-a324-86e5a4f9c803" name="updateLocation" visibility="protected">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="7d44dd9b-22cf-439e-a631-34fe4f04d4b2" name="e">
+          <type xmi:type="uml:Class" href="../../../com.gentleware.uml2.jre60/model/allJarsFlat/java/awt/event/model.auml#event.[C]MouseEvent"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="f5e8df73-7074-434a-a827-a054bbbe4d31" name="Canvas._mouseInteractionHub_Ass" memberEnd="14e19275-48cc-4879-aad3-c69d97c0ab94 cc7fd218-27d2-49ba-9296-0466b061459e">
+      <ownedEnd xmi:type="uml:Property" xmi:id="14e19275-48cc-4879-aad3-c69d97c0ab94" name="_mouseInteractionHub;default" type="0852dd4b-bd87-4120-83b2-223be9ccfa59" association="f5e8df73-7074-434a-a827-a054bbbe4d31"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="b3706896-9b09-44c3-aac2-2bebb85c03a2" name="InteractiveSurface._canvas_Ass" memberEnd="873e5f8b-d871-4002-baff-c6346c6172f6 4675f0f9-1f45-43f9-96f9-79067497db65">
+      <ownedEnd xmi:type="uml:Property" xmi:id="873e5f8b-d871-4002-baff-c6346c6172f6" name="_canvas;default" type="542ebac9-79cc-4148-afc2-8420aa36affb" association="b3706896-9b09-44c3-aac2-2bebb85c03a2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="9cc0953b-ae13-4119-aaba-27d5dc146aea" name="MouseHub._state_Ass" memberEnd="85ed2548-cbd8-4958-958f-f1637a4dc56e 757267e4-4c49-47f2-91d3-e91c8c030640">
+      <ownedEnd xmi:type="uml:Property" xmi:id="85ed2548-cbd8-4958-958f-f1637a4dc56e" name="_state;default" type="8a4b631c-105f-4adf-b7ec-13870bd34111" association="9cc0953b-ae13-4119-aaba-27d5dc146aea"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="b61b44e9-2855-48b2-84d4-5bf26107b7e6" name="MouseHub._canvas_Ass" memberEnd="f361b15a-244b-4141-a362-136adc1c49f2 96436521-110a-448c-90d5-df689a690a6a">
+      <ownedEnd xmi:type="uml:Property" xmi:id="f361b15a-244b-4141-a362-136adc1c49f2" name="_canvas;default" type="8a4b631c-105f-4adf-b7ec-13870bd34111" association="b61b44e9-2855-48b2-84d4-5bf26107b7e6"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="3f06e1d1-9f93-474f-96ff-686cbfe87d79" name="MouseHub._surface_Ass" memberEnd="af1ba3c9-27ad-42a3-9c2c-26914e62b091 7e2bfe94-d4c5-4dd9-8bee-f3bbfe9ebb33">
+      <ownedEnd xmi:type="uml:Property" xmi:id="af1ba3c9-27ad-42a3-9c2c-26914e62b091" name="_surface;default" type="8a4b631c-105f-4adf-b7ec-13870bd34111" association="3f06e1d1-9f93-474f-96ff-686cbfe87d79"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="020ba8f2-b429-48ca-bf82-c47c8a3101c5">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="dee133dd-1ea4-40c6-b06d-80ca41e75e01" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_H_ZGcB5CEduWqeK3CXfnzA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GW_JAVA_PROFILES/Java.profile.uml#_3xRZYR4-EduWqeK3CXfnzA"/>
+    </profileApplication>
+  </uml:Package>
+  <java_profile:create xmi:id="2b80ef44-aa57-4527-9f31-9d3b5e9e882d" base_Operation="efb9b483-a7a8-4402-9b37-cba661241250"/>
+  <java_profile:create xmi:id="01abf82a-1a44-4fe8-9f20-b3971078124a" base_Operation="4c6f8bff-5518-4679-8c51-0d344a140aff"/>
+  <java_profile:create xmi:id="33d9865b-4bcd-47bc-9738-0760be4ac5eb" base_Operation="c0a246a5-8b22-491b-8abe-a8f5f3ac81c3"/>
+  <java_profile:create xmi:id="fdd15e66-9d7b-4f61-bec6-e1a08729b477" base_Operation="8ec0efaa-b1ca-4932-91b2-4c1a9082ca72"/>
+</xmi:XMI>

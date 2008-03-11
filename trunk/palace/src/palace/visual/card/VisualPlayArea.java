@@ -2,10 +2,11 @@ package palace.visual.card;
 
 import java.awt.geom.Rectangle2D;
 
-import visual.AbstractCompositeInteractive;
-import visual.AlignmentArbiter;
-import visual.HorizontalAlignment;
-import visual.VerticalAlignment;
+import palace.toolkit.visual.AbstractCompositeInteractive;
+import palace.toolkit.visual.AlignmentArbiter;
+import palace.toolkit.visual.HorizontalAlignment;
+import palace.toolkit.visual.VerticalAlignment;
+
 
 public class VisualPlayArea extends AbstractCompositeInteractive {
 
