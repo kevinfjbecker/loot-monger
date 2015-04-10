@@ -1,0 +1,1 @@
+Loot Monger is one thing and several. It is an analysis of SJ Games Munchkin, an implementation of a mechanics proof-of-concept. The deliverables to be produced include api's for: card game interfaces, turn structure definition, and runtime modifiable rules.
